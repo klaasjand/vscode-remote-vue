@@ -1,0 +1,34 @@
+{
+  "name": "Vue.js Remote Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "bash",
+        "icon": "terminal-bash"
+      }
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig",
+        "dbaeumer.vscode-eslint",
+        "octref.vetur"
+      ]
+    }
+  },
+  "forwardPorts": [
+    5173
+  ],
+  "portsAttributes": {
+    "5173": {
+      "label": "Forwarded Port",
+      "onAutoForward": "notify"
+    }
+  },
+  // Remove or comment out to connect as root user.
+  "remoteUser": "node"
+}
