@@ -13,6 +13,6 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 USER $USERNAME
 
 RUN mkdir -p ${NPM_GLOBAL}/bin \
-    && echo "export PATH=$NPM_GLOBAL/bin/:$PATH" >> ~/.bashrc \
+    && echo "export PATH=$NPM_GLOBAL/bin:$PATH" >> ~/.bashrc \
     && npm config set prefix ${NPM_GLOBAL} \
     && npm install -g eslint create-vue@latest
