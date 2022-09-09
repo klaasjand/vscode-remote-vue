@@ -7,6 +7,9 @@ Develop Vue.js 3 in VS Code with a development container
 npm init vue@latest $(basename $PWD)
 mv $(basename $PWD)/* .
 rm -ri $(basename $PWD)
+
+npm install
+npm run dev
 ```
 
 For further instructions go to: https://vuejs.org/guide/quick-start.html for a Vue.js quick start guide.
