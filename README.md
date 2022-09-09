@@ -7,8 +7,3 @@ npm init vue@latest
 ```
 
 For further instructions go to: https://vuejs.org/guide/quick-start.html for a Vue.js quick start guide.
-
-Install global packages with:
-```shell
-sudo npm install -g <package-name>
-```
